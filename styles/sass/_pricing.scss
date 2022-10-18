@@ -1,0 +1,52 @@
+.content-info__price {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/images/coffee-bg.png');
+}
+.price__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    background: #2A1F18;
+    border-radius: 15px;
+}
+.price__header {
+    text-align: center;
+    font-size: 29px;
+}
+.price__image {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    user-select: none;
+}
+.price__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-size: 35px;
+}
+.price__description {
+    text-align: center;
+    font-size: 20px;
+    width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+    .content-info__price {
+        height: 400vh;
+    }
+    .price__card {
+        border-radius: 0px;
+    }
+}

@@ -1,0 +1,14 @@
+@import 'pricing';
+@import 'about';
+
+.main__content-info {
+    width: 100vw;
+    height: 250vh;
+    color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+    .main__content-info {
+        height: 300vh;
+    }
+}

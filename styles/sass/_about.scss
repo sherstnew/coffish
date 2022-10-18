@@ -1,0 +1,54 @@
+.content-info__about {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 150vh;
+}
+
+.about__header {
+    font-size: 50px;
+}
+.about__company {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 500px;
+}
+.about__cafes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 500px;
+}
+.info__text {
+    font-size: 23px;
+}
+.info__header {
+    font-size: 50px;
+    margin: 0px 0px 15px 0px;
+}
+// company
+
+.company__image {
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.info__text__header {
+    font-size: 30px;
+}
+
+// cafes
+
+.cafes__image {
+    width: 700px;
+    height: 500px;
+    border-radius: 15px;
+}

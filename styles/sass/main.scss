@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'content-landing';
+@import 'content-info';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #E6B8A2;
+    text-decoration: none;
+}
+a:visited {
+    color: #E6B8A2;
+}
+
+main {
+    color: #fff;
+    font-family: $nff;
+    background: #1C1712;
+    overflow: hidden;
+}

@@ -1,0 +1,182 @@
+@font-face {
+  font-family: Vinnytsia City;
+  src: url("/assets/fonts/VinnytsiaSansReg.ttf");
+}
+@font-face {
+  font-family: Namu;
+  src: url("/assets/fonts/NAMU-1750.ttf");
+}
+.main__content-landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1561766926-a7c863179e15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.header__header {
+  text-align: center;
+  font-size: 60px;
+}
+
+.header__subheader {
+  text-align: center;
+  font-size: 30px;
+}
+
+.content-info__price {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/images/coffee-bg.png");
+}
+
+.price__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 350px;
+  height: 600px;
+  padding: 20px;
+  background: #2A1F18;
+  border-radius: 15px;
+}
+
+.price__header {
+  text-align: center;
+  font-size: 29px;
+}
+
+.price__image {
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+  user-select: none;
+}
+
+.price__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-size: 35px;
+}
+
+.price__description {
+  text-align: center;
+  font-size: 20px;
+  width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+  .content-info__price {
+    height: 400vh;
+  }
+  .price__card {
+    border-radius: 0px;
+  }
+}
+.content-info__about {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 150vh;
+}
+
+.about__header {
+  font-size: 50px;
+}
+
+.about__company {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 500px;
+}
+
+.about__cafes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 500px;
+}
+
+.info__text {
+  font-size: 23px;
+}
+
+.info__header {
+  font-size: 50px;
+  margin: 0px 0px 15px 0px;
+}
+
+.company__image {
+  width: 350px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.info__text__header {
+  font-size: 30px;
+}
+
+.cafes__image {
+  width: 700px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.main__content-info {
+  width: 100vw;
+  height: 250vh;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .main__content-info {
+    height: 300vh;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #E6B8A2;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #E6B8A2;
+}
+
+main {
+  color: #fff;
+  font-family: "Namu", sans-serif;
+  background: #1C1712;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=main.css.map */
