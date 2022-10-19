@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     width: 100vw;
     height: 150vh;
+    background-image: url('/assets/images/coffish-text.png');
 }
 
 .about__header {
@@ -56,6 +57,7 @@
 @media screen and (max-width: 500px){
     .content-info__about {
         height: 320vh;
+        background-image: none;
     }
     .about__company {
         padding: 20px;

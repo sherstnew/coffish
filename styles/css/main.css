@@ -98,6 +98,7 @@
   flex-wrap: wrap;
   width: 100vw;
   height: 150vh;
+  background-image: url("/assets/images/coffish-text.png");
 }
 
 .about__header {
@@ -150,6 +151,7 @@
 @media screen and (max-width: 500px) {
   .content-info__about {
     height: 320vh;
+    background-image: none;
   }
   .about__company {
     padding: 20px;
@@ -178,9 +180,53 @@
     height: 700vh;
   }
 }
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  background: #241e17;
+}
+
+.footer__feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.feedback__list {
+  font-size: 20px;
+  list-style-type: none;
+}
+.feedback__list li {
+  margin: 0px 0px 10px 0px;
+}
+
+.footer__dev {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  color: #fff;
+  font-family: "Namu", sans-serif;
+  background: #1C1712;
+  overflow-x: hidden;
 }
 
 a {
@@ -190,13 +236,6 @@ a {
 
 a:visited {
   color: #E6B8A2;
-}
-
-main {
-  color: #fff;
-  font-family: "Namu", sans-serif;
-  background: #1C1712;
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */
