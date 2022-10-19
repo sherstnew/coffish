@@ -147,6 +147,26 @@
   border-radius: 15px;
 }
 
+@media screen and (max-width: 500px) {
+  .content-info__about {
+    height: 320vh;
+  }
+  .about__company {
+    padding: 20px;
+    height: 110vh;
+  }
+  .about__cafes {
+    padding: 20px;
+    height: 110vh;
+  }
+  .cafes__image {
+    width: 90vw;
+    height: 35vh;
+  }
+  .info__text__benefits li {
+    margin-left: 20px;
+  }
+}
 .main__content-info {
   width: 100vw;
   height: 250vh;
@@ -155,7 +175,7 @@
 
 @media screen and (max-width: 500px) {
   .main__content-info {
-    height: 300vh;
+    height: 700vh;
   }
 }
 * {
