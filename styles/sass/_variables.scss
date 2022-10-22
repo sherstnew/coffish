@@ -1,11 +1,39 @@
 @font-face {
-    font-family: Vinnytsia City;
-    src: url('/assets/fonts/VinnytsiaSansReg.ttf');
-}
-@font-face {
     font-family: Namu;
     src: url('/assets/fonts/NAMU-1750.ttf');
 }
 
-$nff: 'Namu', sans-serif;
-$vff: 'Vinnytsia City', sans-serif;
+// mixins
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin spce {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+// font-family
+$ff: 'Namu', sans-serif;
+// font sizes
+$fs_lh: 60px;
+$fs_mh: 50px;
+$fs_h: 30px;
+$fs_p: 20px;
+// viewport metrics
+$vw: 100vw;
+$vh: 100vh;
+// colors
+$col_p: #ffffff;
+$col_a: #E6B8A2;
+$bg: #1C1712;
+$bg_card: #2A1F18;
+$bg_foot: #241e17;
+// other
+$br: 15px;

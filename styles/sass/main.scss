@@ -1,6 +1,6 @@
 @import 'variables';
 @import 'content-landing';
-@import 'content-info';
+@import 'content-about';
 @import 'footer';
 
 * {
@@ -9,16 +9,16 @@
 }
 
 body {
-    color: #fff;
-    font-family: $nff;
-    background: #1C1712;
+    color: $col_p;
+    font-family: $ff;
+    background: $bg;
     overflow-x: hidden;
 }
 
 a {
-    color: #E6B8A2;
+    color: $col_a;
     text-decoration: none;
 }
 a:visited {
-    color: #E6B8A2;
+    color: $col_a;
 }

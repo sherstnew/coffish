@@ -1,8 +1,4 @@
 @font-face {
-  font-family: Vinnytsia City;
-  src: url("/assets/fonts/VinnytsiaSansReg.ttf");
-}
-@font-face {
   font-family: Namu;
   src: url("/assets/fonts/NAMU-1750.ttf");
 }
@@ -10,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1561766926-a7c863179e15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
@@ -34,14 +31,18 @@
   font-size: 30px;
 }
 
-.content-info__price {
+.content-about__price {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   width: 100vw;
-  height: 100vh;
   background-image: url("/assets/images/coffee-bg.png");
+}
+@media screen and (min-width: 501px) {
+  .content-about__price {
+    height: 100vh;
+  }
 }
 
 .price__card {
@@ -56,42 +57,39 @@
   border-radius: 15px;
 }
 
-.price__header {
+.card__header {
   text-align: center;
-  font-size: 29px;
+  font-size: 30px;
 }
 
-.price__image {
+.card__image {
   width: 200px;
   height: 300px;
   border-radius: 15px;
   user-select: none;
 }
 
-.price__price {
+.card__cost {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 200px;
-  height: 50px;
   font-size: 35px;
 }
 
-.price__description {
+.card__description {
   text-align: center;
   font-size: 20px;
   width: 300px;
 }
 
 @media screen and (max-width: 500px) {
-  .content-info__price {
-    height: 400vh;
-  }
   .price__card {
     border-radius: 0px;
   }
 }
-.content-info__about {
+.content-about__about {
   display: flex;
   justify-content: center;
   align-content: space-around;
@@ -149,7 +147,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .content-info__about {
+  .content-about__about {
     height: 320vh;
     background-image: none;
   }
@@ -166,24 +164,24 @@
     height: 35vh;
   }
   .info__text__benefits li {
-    margin-left: 20px;
+    margin: 0px 0px 0px 20px;
   }
 }
-.main__content-info {
+.main__content-about {
   width: 100vw;
   height: 250vh;
-  color: #fff;
 }
 
 @media screen and (max-width: 500px) {
-  .main__content-info {
-    height: 700vh;
+  .main__content-about {
+    height: 600vh;
   }
 }
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100vw;
   height: 200px;
   background: #241e17;
@@ -193,6 +191,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 400px;
 }
 
@@ -206,24 +205,21 @@
 
 .footer__dev {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 300px;
   font-size: 25px;
 }
 
-@media screen and (max-width: 500px) {
-  .footer {
-    flex-wrap: wrap;
-  }
-}
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  color: #fff;
+  color: #ffffff;
   font-family: "Namu", sans-serif;
   background: #1C1712;
   overflow-x: hidden;

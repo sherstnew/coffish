@@ -1,51 +1,41 @@
-.content-info__price {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 100vh;
+.content-about__price {
+    @include spce;
+    width: $vw;
+    @media screen and (min-width: 501px) {
+        height: $vh;
+    }
     background-image: url('/assets/images/coffee-bg.png');
 }
 .price__card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    @include center;
     width: 350px;
     height: 600px;
     padding: 20px;
-    background: #2A1F18;
-    border-radius: 15px;
+    background: $bg_card;;
+    border-radius: $br;
 }
-.price__header {
+.card__header {
     text-align: center;
-    font-size: 29px;
+    font-size: $fs_h;
 }
-.price__image {
+.card__image {
     width: 200px;
     height: 300px;
-    border-radius: 15px;
+    border-radius: $br;
     user-select: none;
 }
-.price__price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card__cost {
+    @include center;
     width: 200px;
-    height: 50px;
-    font-size: 35px;
+    font-size: $fs_h + 5px;
 }
-.price__description {
+.card__description {
     text-align: center;
-    font-size: 20px;
+    font-size: $fs_p;
     width: 300px;
 }
 
 @media screen and (max-width: 500px) {
-    .content-info__price {
-        height: 400vh;
-    }
     .price__card {
         border-radius: 0px;
     }

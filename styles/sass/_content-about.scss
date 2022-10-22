@@ -1,0 +1,13 @@
+@import 'pricing';
+@import 'about';
+
+.main__content-about {
+    width: $vw;
+    height: $vh * 2 + 50vh;
+}
+
+@media screen and (max-width: 500px) {
+    .main__content-about {
+        height: $vh * 6;
+    }
+}

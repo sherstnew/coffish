@@ -1,37 +1,31 @@
-.content-info__about {
+.content-about__about {
     display: flex;
     justify-content: center;
     align-content: space-around;
     flex-wrap: wrap;
-    width: 100vw;
-    height: 150vh;
+    width: $vw;
+    height: $vh + 50vh;
     background-image: url('/assets/images/coffish-text.png');
 }
 
 .about__header {
-    font-size: 50px;
+    font-size: $fs_mh;
 }
 .about__company {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100vw;
+    @include spce;
+    width: $vw;
     height: 500px;
 }
 .about__cafes {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100vw;
+    @include spce;
+    width: $vw;
     height: 500px;
 }
 .info__text {
-    font-size: 23px;
+    font-size: $fs_p + 3px;
 }
 .info__header {
-    font-size: 50px;
+    font-size: $fs_mh;
     margin: 0px 0px 15px 0px;
 }
 // company
@@ -39,11 +33,11 @@
 .company__image {
     width: 350px;
     height: 500px;
-    border-radius: 15px;
+    border-radius: $br;
 }
 
 .info__text__header {
-    font-size: 30px;
+    font-size: $fs_h;
 }
 
 // cafes
@@ -51,12 +45,12 @@
 .cafes__image {
     width: 700px;
     height: 500px;
-    border-radius: 15px;
+    border-radius: $br;
 }
 
 @media screen and (max-width: 500px){
-    .content-info__about {
-        height: 320vh;
+    .content-about__about {
+        height: $vh * 3 + 20vh;
         background-image: none;
     }
     .about__company {
@@ -73,7 +67,7 @@
     }
     .info__text__benefits {
         li {
-            margin-left: 20px;
+            margin: 0px 0px 0px 20px;
         }
     }
 }
